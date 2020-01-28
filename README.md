@@ -33,7 +33,7 @@ uid,file_name,family,genus,species
 
 ### Frames
 
-Frames are extracted from the videos where we have an event measure measurement, and an assocaited fish label. The images are available [here](https://data.pawsey.org.au/public/?path=/FDFML/frames) and metadata [here](https://data.pawsey.org.au/download/FDFML/metadata/frame_metadata.csv).
+Frames are extracted from the videos where we have an event measure measurement, and an associated fish label. The images are available [here](https://data.pawsey.org.au/public/?path=/FDFML/frames) and metadata [here](https://data.pawsey.org.au/download/FDFML/metadata/frame_metadata.csv).
 
 Frames have an associated metadata file which links the species, genus, family annotation fish in the frame.
 
