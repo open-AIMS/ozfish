@@ -18,7 +18,7 @@ Australian Institute of Marine Science (AIMS), University of Western Australia (
 
 ### Crops
 
-![Fish Crops](fishcrops.png?raw=true "Fish Crops")
+![Fish Crops](https://aims.github.io/ozfish/fishcrops.png?raw=true "Fish Crops")
 
 Fish crops are from frames in videos where we had associated measurements with fish in the frames. Using the measurements we were able estimate a bounding box for the fish, the images are available [here](https://data.pawsey.org.au/public/?path=/FDFML/crops) and metadata [here](https://data.pawsey.org.au/download/FDFML/metadata/crop_metadata.csv).
 
