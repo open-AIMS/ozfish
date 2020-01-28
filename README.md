@@ -14,7 +14,9 @@ OzFish is a collection of ~80k fish crops, ~45k bounding box annotations derived
 
 To cite this dataset use the following: 
 
-Australian Institute of Marine Science (AIMS), University of Western Australia (UWA) and Curtin University. (2019), OzFish Dataset - Machine learning dataset for Baited Remote Underwater Video Stations , [https://doi.org/10.25845/5e28f062c5097](https://doi.org/10.25845/5e28f062c5097)
+Australian Institute of Marine Science (AIMS), University of Western Australia (UWA) and Curtin University. (2019), OzFish Dataset - Machine learning dataset for Baited Remote Underwater Video Stations, [https://doi.org/10.25845/5e28f062c5097](https://doi.org/10.25845/5e28f062c5097)
+
+For more information see [metadata] (http://corporate.aims.gov.au/metadata/view/38c829d4-6b6d-44a1-9476-f9b0955ce0b8).
 
 ### Crops
 
