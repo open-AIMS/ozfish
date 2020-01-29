@@ -10,7 +10,7 @@ This work is licensed under a [Creative Commons Attribution 3.0 Australian Licen
 
 ## OzFish dataset
 
-OzFish is a collection of ~80k fish crops, ~45k bounding box annotations derived from Baited Remote Underwater Video Stations (BRUVS). This dataset is completely open and free to use for advancing machine learning for the classification of fish from underwater imagery. 
+OzFish is a collection of ~80k fish crops, ~45k bounding box annotations derived from Baited Remote Underwater Video Stations (BRUVS) and comprised of 70 families, 200 genera and 507 species of fish. This dataset is completely open and free to use for advancing machine learning for the classification of fish from underwater imagery. 
 
 To cite this dataset use the following: 
 
