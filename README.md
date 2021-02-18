@@ -93,3 +93,17 @@ with open(manifest) as json_file:
         for annotation in annotations:
             print(annotation["left"], annotation["top"], annotation["width"], annotation["height"])
 ```
+
+### Bounding Box Species Annotations
+
+Bounding box annotations were generated on the Sagemaker Ground Truth Platform, using multiple observers and combining the results. Bounding boxes were then labelled to species level (using vgg annotator) by an ecologist for fish that were identifiable in the frame. Fish which were not identifiable to species were left with the label "fish". The images are available [here](https://data.pawsey.org.au/public/?path=/FDFML/labelled/frames) and metadata [here](https://data.pawsey.org.au/public/?path=/FDFML/labelled/speciesboxes).
+
+### Bounding Box Tail Annotations
+
+![Bounding box tail annotations](https://aims.github.io/ozfish/fish_tails.png?raw=true "Bounding box annotations")
+
+Bounding boxes were applied to the tails of fish (using vgg annotator) that were identifiable under a set of seven categories: 'Emarginate', 'Ornate lunated', 'Truncated', 'Lunate', 'Heterocercal', 'Forked', 'Rounded'. Tails which could not be identified were not bounding boxed or labelled. The images are available [here](https://data.pawsey.org.au/public/?path=/FDFML/labelled/frames) and metadata [here](https://data.pawsey.org.au/download/FDFML/labelled/fishtails/FishTails_via.json).
+
+### Fish measurement files
+
+These files are exports from the event measure software which give pixel locations for nose and tail of fish which were measured, and a measurement in cm for the given fish. The images are available [here](https://data.pawsey.org.au/public/?path=/FDFML/labelled/frames) and metadata [here](https://data.pawsey.org.au/public/?path=/FDFML/labelled/measurementfiles).
