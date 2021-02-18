@@ -106,4 +106,36 @@ Bounding boxes were applied to the tails of fish (using vgg annotator) that were
 
 ### Fish measurement files
 
-These files are exports from the event measure software which give pixel locations for nose and tail of fish which were measured, and a measurement in cm for the given fish. The images are available [here](https://data.pawsey.org.au/public/?path=/FDFML/labelled/frames) and metadata [here](https://data.pawsey.org.au/public/?path=/FDFML/labelled/measurementfiles).
+These files are exports from the event measure software which give pixel locations for nose and tail of fish which were measured, and a measurement in cm for the given fish. The images are available [here](https://data.pawsey.org.au/public/?path=/FDFML/labelled/frames) and metadata [here](https://data.pawsey.org.au/public/?path=/FDFML/labelled/measurementfiles). 
+
+The following is an example python snippet for reading a measurement file and drawing a measurement line.
+
+```markdown
+import cv2  
+import pandas
+import os
+
+df = pandas.read_csv("../A_lengths.csv")
+frames_path = "../OzFishFrames/"
+
+point_pairs = df.ImagePtPair.unique()
+line_thickness = 2
+
+for point in point_pairs:
+
+    frame = df[(df.ImagePtPair == point)]["OzFishFrame"].values[0]
+    image_path = os.path.join(frames_path, frame)
+    image = cv2.imread(image_path, cv2.COLOR_BGR2RGB)
+
+    lx0 = int(df[(df.ImagePtPair == point) & (df.Index == 0)]["Lx"].values[0])
+    ly0 = int(df[(df.ImagePtPair == point) & (df.Index == 0)]["Ly"].values[0])
+    lx1 = int(df[(df.ImagePtPair == point) & (df.Index == 1)]["Lx"].values[0])
+    ly1 = int(df[(df.ImagePtPair == point) & (df.Index == 1)]["Ly"].values[0])
+    print(lx0, ly0, lx1, ly1, image_path)
+    cv2.line(image, (lx0, ly0), (lx1, ly1), (0, 255, 0), thickness=line_thickness)
+
+    cv2.imshow('Measurement in mm', image)
+
+    if cv2.waitKey() == ord('q'):
+        exit(0)
+```
