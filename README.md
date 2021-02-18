@@ -106,7 +106,7 @@ Bounding boxes were applied to the tails of fish (using vgg annotator) that were
 
 ### Fish measurement files
 
-These files are exports from the event measure software which give pixel locations for nose and tail of fish which were measured, and a measurement in cm for the given fish. The images are available [here](https://data.pawsey.org.au/public/?path=/FDFML/labelled/frames) and metadata [here](https://data.pawsey.org.au/public/?path=/FDFML/labelled/measurementfiles). 
+These files are exports from the event measure software which give pixel locations for nose and tail of fish which were measured, and a measurement in mm for the given fish. The images are available [here](https://data.pawsey.org.au/public/?path=/FDFML/labelled/frames) and metadata [here](https://data.pawsey.org.au/public/?path=/FDFML/labelled/measurementfiles). 
 
 The following is an example python snippet for reading a measurement file and drawing a measurement line.
 
