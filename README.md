@@ -100,7 +100,7 @@ Bounding box annotations were generated on the Sagemaker Ground Truth Platform, 
 
 ### Bounding Box Tail Annotations
 
-![Bounding box tail annotations](https://aims.github.io/ozfish/fish_tails.png?raw=true "Bounding box annotations")
+![Bounding box tail annotations](https://open-AIMS.github.io/ozfish/fish_tails.png?raw=true "Bounding box annotations")
 
 Bounding boxes were applied to the tails of fish (using vgg annotator) that were identifiable under a set of seven categories: 'Emarginate', 'Ornate lunated', 'Truncated', 'Lunate', 'Heterocercal', 'Forked', 'Rounded'. Tails which could not be identified were not bounding boxed or labelled. The images are available [here](https://data.pawsey.org.au/public/?path=/FDFML/labelled/frames) and metadata [here](https://data.pawsey.org.au/download/FDFML/labelled/fishtails/FishTails_via.json).
 
