@@ -20,7 +20,7 @@ For more information see [metadata](https://doi.org/10.25845/5e28f062c5097).
 
 ### Raw Video 
 
-[Raw Stero BRUVS](https://data.pawsey.org.au/public/?path=/FDFML/videos)
+[Raw Stereo BRUVS](https://data.pawsey.org.au/public/?path=/FDFML/videos)
 
 ### Crops
 
