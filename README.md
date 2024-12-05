@@ -20,13 +20,13 @@ For more information see [metadata](https://doi.org/10.25845/5e28f062c5097).
 
 ### Raw Video 
 
-[Raw Stero BRUVS](https://storage.pawsey.org.au/public/m/projects/FDFML/videos)
+[Raw Stero BRUVS](https://storage.pawsey.org.au/public/m/FDFML/videos)
 
 ### Crops
 
 ![Fish Crops](https://open-AIMS.github.io/ozfish/fishcrops.png?raw=true "Fish Crops")
 
-Fish crops are from frames in videos where we had associated measurements with fish in the frames. Using the measurements we were able estimate a bounding box for the fish, the images are available [here](https://storage.pawsey.org.au/public/m/projects/FDFML/crops) and metadata [here](https://storage.pawsey.org.au/public/m/projects/FDFML/metadata/crop_metadata.csv).
+Fish crops are from frames in videos where we had associated measurements with fish in the frames. Using the measurements we were able estimate a bounding box for the fish, the images are available [here](https://storage.pawsey.org.au/public/m/FDFML/crops) and metadata [here](https://storage.pawsey.org.au/public/m/FDFML/metadata/crop_metadata.csv).
 
 The fish crops have an associated metadata file which links the species, genus, family annotation to the crop.
 
@@ -37,7 +37,7 @@ uid,file_name,family,genus,species
 
 ### Frames
 
-Frames are extracted from the videos where we have an event measure measurement, and an associated fish label. The images are available [here](https://storage.pawsey.org.au/public/m/projects/FDFML/frames) and metadata [here](https://storage.pawsey.org.au/public/m/projects/FDFML/metadata/frame_metadata.csv).
+Frames are extracted from the videos where we have an event measure measurement, and an associated fish label. The images are available [here](https://storage.pawsey.org.au/public/m/FDFML/frames) and metadata [here](https://storage.pawsey.org.au/public/m/FDFML/metadata/frame_metadata.csv).
 
 Frames have an associated metadata file which links the species, genus, family annotation fish in the frame.
 
@@ -54,7 +54,7 @@ uid,file_name,x0,y0,x1,y1,family,genus,species
 
 ![Bounding box annotations](https://open-AIMS.github.io/ozfish/bounding-box-annotations.png?raw=true "Bounding box annotations")
 
-Bounding box annotations were generated on the Sagemaker Ground Truth Platform, using multiple observers and combining the results. Unlike the crops, frames and videos, these annotations are fish/no-fish only and have no species/genus/family labels. The images are available [here](https://storage.pawsey.org.au/public/m/projects/FDFML/frames) and metadata [here](https://storage.pawsey.org.au/public/m/projects/FDFML/labelled/manifests).
+Bounding box annotations were generated on the Sagemaker Ground Truth Platform, using multiple observers and combining the results. Unlike the crops, frames and videos, these annotations are fish/no-fish only and have no species/genus/family labels. The images are available [here](https://storage.pawsey.org.au/public/m/FDFML/frames) and metadata [here](https://storage.pawsey.org.au/public/m/FDFML/labelled/manifests).
 
 Bounding boxes have associated JSON metadata.
 
@@ -96,17 +96,17 @@ with open(manifest) as json_file:
 
 ### Bounding Box Species Annotations
 
-Bounding box annotations were generated on the Sagemaker Ground Truth Platform, using multiple observers and combining the results. Bounding boxes were then labelled to species level (using vgg annotator) by an ecologist for fish that were identifiable in the frame. Fish which were not identifiable to species were left with the label "fish". The images are available [here](https://storage.pawsey.org.au/public/m/projects/FDFML/labelled/frames) and metadata [here](https://storage.pawsey.org.au/public/m/projects/FDFML/labelled/speciesboxes).
+Bounding box annotations were generated on the Sagemaker Ground Truth Platform, using multiple observers and combining the results. Bounding boxes were then labelled to species level (using vgg annotator) by an ecologist for fish that were identifiable in the frame. Fish which were not identifiable to species were left with the label "fish". The images are available [here](https://storage.pawsey.org.au/public/m/FDFML/labelled/frames) and metadata [here](https://storage.pawsey.org.au/public/m/FDFML/labelled/speciesboxes).
 
 ### Bounding Box Tail Annotations
 
 ![Bounding box tail annotations](https://open-AIMS.github.io/ozfish/fish_tails.png?raw=true "Bounding box annotations")
 
-Bounding boxes were applied to the tails of fish (using vgg annotator) that were identifiable under a set of seven categories: 'Emarginate', 'Ornate lunated', 'Truncated', 'Lunate', 'Heterocercal', 'Forked', 'Rounded'. Tails which could not be identified were not bounding boxed or labelled. The images are available [here](https://storage.pawsey.org.au/public/m/projects/FDFML/labelled/frames) and metadata [here](https://storage.pawsey.org.au/public/m/projects/FDFML/labelled/fishtails/FishTails_via.json).
+Bounding boxes were applied to the tails of fish (using vgg annotator) that were identifiable under a set of seven categories: 'Emarginate', 'Ornate lunated', 'Truncated', 'Lunate', 'Heterocercal', 'Forked', 'Rounded'. Tails which could not be identified were not bounding boxed or labelled. The images are available [here](https://storage.pawsey.org.au/public/m/FDFML/labelled/frames) and metadata [here](https://storage.pawsey.org.au/public/m/FDFML/labelled/fishtails/FishTails_via.json).
 
 ### Fish measurement files
 
-These files are exports from the event measure software which give pixel locations for nose and tail of fish which were measured, and a measurement in mm for the given fish. The images are available [here](https://storage.pawsey.org.au/public/m/projects/FDFML/labelled/frames) and metadata [here](https://storage.pawsey.org.au/public/m/projects/FDFML/labelled/measurementfiles). 
+These files are exports from the event measure software which give pixel locations for nose and tail of fish which were measured, and a measurement in mm for the given fish. The images are available [here](https://storage.pawsey.org.au/public/m/FDFML/labelled/frames) and metadata [here](https://storage.pawsey.org.au/public/m/FDFML/labelled/measurementfiles). 
 
 The following is an example python snippet for reading a measurement file and drawing a measurement line.
 
