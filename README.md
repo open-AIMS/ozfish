@@ -26,7 +26,7 @@ For more information see [metadata](https://doi.org/10.25845/5e28f062c5097).
 
 ![Fish Crops](https://open-AIMS.github.io/ozfish/fishcrops.png?raw=true "Fish Crops")
 
-Fish crops are from frames in videos where we had associated measurements with fish in the frames. Using the measurements we were able estimate a bounding box for the fish, the images are available [here](https://storage.pawsey.org.au/public/m/FDFML/crops) and metadata [here](https://storage.pawsey.org.au/public/m/FDFML/metadata/crop_metadata.csv).
+Fish crops are from frames in videos where we had associated measurements with fish in the frames. Using the measurements we were able estimate a bounding box for the fish, the images are available [here](https://storage.pawsey.org.au/public/m/FDFML/crops) and metadata [here](https://storage.pawsey.org.au/public/m/FDFML/metadata).
 
 The fish crops have an associated metadata file which links the species, genus, family annotation to the crop.
 
@@ -37,7 +37,7 @@ uid,file_name,family,genus,species
 
 ### Frames
 
-Frames are extracted from the videos where we have an event measure measurement, and an associated fish label. The images are available [here](https://storage.pawsey.org.au/public/m/FDFML/frames) and metadata [here](https://storage.pawsey.org.au/public/m/FDFML/metadata/frame_metadata.csv).
+Frames are extracted from the videos where we have an event measure measurement, and an associated fish label. The images are available [here](https://storage.pawsey.org.au/public/m/FDFML/frames) and metadata [here](https://storage.pawsey.org.au/public/m/FDFML/metadata).
 
 Frames have an associated metadata file which links the species, genus, family annotation fish in the frame.
 
@@ -102,7 +102,7 @@ Bounding box annotations were generated on the Sagemaker Ground Truth Platform, 
 
 ![Bounding box tail annotations](https://open-AIMS.github.io/ozfish/fish_tails.png?raw=true "Bounding box annotations")
 
-Bounding boxes were applied to the tails of fish (using vgg annotator) that were identifiable under a set of seven categories: 'Emarginate', 'Ornate lunated', 'Truncated', 'Lunate', 'Heterocercal', 'Forked', 'Rounded'. Tails which could not be identified were not bounding boxed or labelled. The images are available [here](https://storage.pawsey.org.au/public/m/FDFML/labelled/frames) and metadata [here](https://storage.pawsey.org.au/public/m/FDFML/labelled/fishtails/FishTails_via.json).
+Bounding boxes were applied to the tails of fish (using vgg annotator) that were identifiable under a set of seven categories: 'Emarginate', 'Ornate lunated', 'Truncated', 'Lunate', 'Heterocercal', 'Forked', 'Rounded'. Tails which could not be identified were not bounding boxed or labelled. The images are available [here](https://storage.pawsey.org.au/public/m/FDFML/labelled/frames) and metadata [here](https://storage.pawsey.org.au/public/m/FDFML/labelled/fishtails).
 
 ### Fish measurement files
 
